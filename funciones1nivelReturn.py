@@ -32,8 +32,9 @@ def media(*l):
     return suma / len(l)
 
 
-funciones = {'max': maxi, 'min': mini, 'med': media}
+funciones = {'max': maxi, 'min': mini, 'med': media} # diccionario con los nombres de las funciones
 
+# Creamos una función que devuelva una de las 3 funciones anteriores usando el diccionario.
 def returnF(nombre):
     if nombre.lower() in funciones.keys():
         return funciones[nombre]
@@ -42,4 +43,4 @@ def returnF(nombre):
 
 returnF('max')(1,3,-1,15,9) # invocamos una función de primer nivel que nos devuelve una funcion,
 #cual? la que la pedimos.. en este caso MAXI
-# y la le damos sus parámetros para que se ejecute.
+# y le damos sus parámetros para que se ejecute.
